@@ -6,13 +6,28 @@
 
 # Program Organization
 
-The program scripts are contained in `src` directory
+The program organization is described below:
 
 ### 1. Src
+
+`src`
+  ---> Makefile           (Script to compile)
+  ---> nsga3.c            (NSGA-III code)
+  ----> ga.c              (Workflow code)
+
 The code driving the ga workflow and performing the nsga III optimization is contained here. The makefile in the folder compiles ga and moga code and moves them one level up to the root so that it can carry out the computation
 
 ### 2. UTIL
 The necessary input files to be read related to the cell and band information is contained here. These files will be read by moga to perform ga iterations.
+
+`UTIL`
+ ---> band0.dat            (Phonon dispersion file)
+ ---> band1.dat            (Phonon dispersion file)
+ ---> band2.dat            (Phonon dispersion file)
+ ---> cell1                (cell constant file)
+ ---> cell2                (cell constant file)
+ ---> cell3                (cell constant file)
+ ----> forcefield          (Stillinger Weber forcefield template file)
 
 ### 3. Example
 It contains an example problem which does SW ffield optimization based on phonon dispersion and cell constant optimizations.
