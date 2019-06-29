@@ -12,8 +12,11 @@ The program organization is described below:
 
 `src`
   ---> Makefile           (Script to compile)
+  
   ---> nsga3.c            (NSGA-III code)
+  
   ----> ga.c              (Workflow code)
+  
 
 The code driving the ga workflow and performing the nsga III optimization is contained here. The makefile in the folder compiles ga and moga code and moves them one level up to the root so that it can carry out the computation
 
