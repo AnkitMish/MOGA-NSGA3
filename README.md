@@ -4,6 +4,28 @@
 
 <img src="./Media/Picture1.png" width=400>
 
+# Program Organization
+
+The program scripts are contained in *src* directory
+
+### 1. Src
+The code driving the ga workflow and performing the nsga III optimization is contained here. The makefile in the folder compiles ga and moga code and moves them one level up to the root so that it can carry out the computation
+
+### 2. UTIL
+The necessary input files to be read related to the cell and band information is contained here. These files will be read by moga to perform ga iterations.
+
+### 3. Example
+It contains an example problem which does SW ffield optimization based on phonon dispersion and cell constant optimizations.
+
+### 4. hyperplane.in
+This file contains the total number of points that the GA algorithm need to consider to efficiently guiding the search and hence for successive optimization.
+
+### 5. var.in
+This file contains the input parameters required by moga code to run the calculation.
+
+### 6. cleanup.sh
+This is a helper script which carries out cleanup operation before performing any GA runs.
+
 ## USAGE:
 
 ### Step 1: Provide data for running the force field fitting
