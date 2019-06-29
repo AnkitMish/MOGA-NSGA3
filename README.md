@@ -25,12 +25,19 @@ The code driving the ga workflow and performing the nsga III optimization is con
 The necessary input files to be read related to the cell and band information is contained here. These files will be read by moga to perform ga iterations.
 
 `UTIL`
+
  ---> band0.dat            (Phonon dispersion file)
+ 
  ---> band1.dat            (Phonon dispersion file)
+ 
  ---> band2.dat            (Phonon dispersion file)
+ 
  ---> cell1                (cell constant file)
+ 
  ---> cell2                (cell constant file)
+ 
  ---> cell3                (cell constant file)
+ 
  ----> forcefield          (Stillinger Weber forcefield template file)
 
 ### 3. Example
